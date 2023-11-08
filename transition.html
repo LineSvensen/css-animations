@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition</title>
+</head>
+<style>
+    div {
+        background-color: grey;
+        color: white;
+        font-size: 3rem;
+        width: 400px;
+        height: 400px;
+        /*transition: 0.5s;*/
+        /*transition: color 5s;*/
+        /*transition-property: all; <-- for both background and color*/
+        /*transition: all 5s linear;*/
+        /*transition: all 2000ms ease-in;*/
+        transition: all 1s ease-in-out;
+        /*transition: color 1s, background-color 2s ease-in-out;*/
+        /*ease in = slow in the beguinning*/
+        /*ease out = slow in the beguinning */
+    }
+
+    div:hover {
+        background-color: lightgrey;
+        color: black;
+        width: 300px;
+        height: 300px;
+    }
+
+</style>
+<body>
+    <div>
+        This is a test
+    </div>
+</body>
+</html>

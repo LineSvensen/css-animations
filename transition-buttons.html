@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition-buttons</title>
+    <style>
+
+        * {
+            font-family: Arial;
+            font-weight: normal;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: lightgrey;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+        .click-me-to-hide-me button {
+            height: 50px;
+            width: 300px;
+            background-color: greenyellow;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            margin: 8px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .click-me-to-hide-me button:hover {
+            opacity: .7;
+            transition: opacity 500ms;
+        }
+
+        .click-me-to-hide-me button:hover {
+            opacity: 0;
+        }
+
+        .click-me-to-change-color button {
+            height: 50px;
+            width: 300px;
+            background-color: greenyellow;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            margin: 8px;
+            cursor: pointer;
+        }
+
+        .click-me-to-change-color button:hover {
+            background-color: cadetblue;
+            color: white;
+            transition: 1s ease-in;
+            width: 350px;
+            height: 70px;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="click-me-to-hide-me">
+        <button>Click me to hide me</button>
+    </div>
+    <div class="click-me-to-change-color">
+        <button>Click me to change color</button>
+    </div>
+
+</body>
+</html>
