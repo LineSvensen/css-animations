@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic light</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .bouncing-ball {
+            width: 100px;
+            height: 100px;
+            background-color: deeppink;
+            border-radius: 50%;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-50px);
+            }
+            60% {
+                transform: translateY(-20px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bouncing-ball">
+
+    </div>
+</body>
+</html>

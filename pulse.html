@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pulse</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .pulse {
+            width: 200px;
+            height: 200px;
+            background-color: mediumpurple;
+            border-radius: 50%;
+            animation-name: pulse;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                background-color: lightpink;
+                width: 200px;
+                height: 200px;
+            }
+            50% {
+                background-color: palevioletred;
+                width: 190px;
+                height: 190px;
+            }
+            90% {
+                background-color: hotpink;
+                width: 220px;
+                height: 220px;
+            }
+            100% {
+                background-color: lightpink;
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="pulse">
+
+    </div>
+</body>
+</html>

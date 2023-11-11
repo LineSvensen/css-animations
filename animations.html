@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .fade-in-box {
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            animation-name: fadeIn;  /*refers to the keyframe name*/
+            animation-duration: 5s;
+            /*animation-iteration-count: infinite;*/
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="fade-in-box">
+
+    </div>
+
+</body>
+</html>
